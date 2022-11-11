@@ -2,7 +2,6 @@ const express = require('express')
 require('../db/mongoose')
 const auth = require('../middleware/auth')
 const Articles = require('../models/article')
-const collect = require('collect.js')
 const route = new express.Router()
 //create article
 route.post('/article/:id',auth ,async( req , res)=>{
